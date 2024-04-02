@@ -11,7 +11,7 @@ function cleanInputString(str) {
     return str.replace(regex, "")
 }
 
-function isInvalidInput (str) {
+function isInvalidInput(str) {
     const regex = /\d+e\d+/i;
     return str.match(regex);
 }
@@ -27,8 +27,9 @@ function addEntry() {
     `;
     targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
-function getCaloriesFromInputs(list) {
 
+function getCaloriesFromInputs(list) {
+    let calories = 0;
 }
 
 addEntryButton.addEventListener("click", addEntry);
